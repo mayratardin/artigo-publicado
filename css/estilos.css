@@ -151,7 +151,7 @@ header h4 {
   font-size: 0.8em;
 }
 
- .grid {
+.contato .icons {
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(2, 200px);
@@ -172,4 +172,42 @@ header h4 {
 .contato a:hover  {
   text-decoration: none;
   text-shadow: 0px 0px 10px  var(--title-color);
+}
+
+/* Trabalhando as imagens da página Artigo*/
+.conteudo .grid {
+  margin: 3.4em;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  width: 100%;
+}
+
+.card-back {
+  background-color: var(--title-color);
+  transform: rotateY(180deg);
+  color: rgb(209, 207, 207);
+  text-align: center;
+}
+
+.img-artigo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; 
 }
