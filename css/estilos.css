@@ -1,0 +1,175 @@
+:root {
+  --title-color: rgb(1, 17, 17);
+  --primary-color: rgb(16, 80, 80);
+}
+
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgb(15, 15, 17), rgba(228, 188, 188, 0)), url('../img/fundo.jpg');
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+  background-color: rgb(209, 207, 207);
+  font-family: 'Roboto', sans-serif; 
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  background-color: rgb(209, 207, 207);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: var(--primary-color);
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 3s, color 3s;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: var(--title-color);
+  color: rgb(209, 207, 207);
+}
+
+.site-subtitle, 
+.site-title {
+  text-align: center;
+  text-shadow: 0px 0px 10px whitesmoke;
+}
+
+.site-title {
+  color: var(--title-color);
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+}
+
+.site-subtitle {
+  color: var(--primary-color);
+  font-style: italic;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.contato,
+.artigo {
+  padding: 2em;
+  min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
+
+.contato h2,
+.artigo h2 {
+  color: var(--primary-color);
+  font-style: italic;
+  font-size: 2.2em;
+  margin-bottom: 1.2em;
+}
+
+header h4 {
+  margin-top: 3.4em;
+  margin-left: 56em;
+  text-shadow: 6px 0px 10px whitesmoke;
+}
+
+.conteudo h2{
+  margin-top: 1.4em;
+}
+
+.artigo a {
+  color: var(--primary-color);
+  font-style: italic;  
+}
+
+.artigo p,
+.artigo blockquote {
+  font-family: 'Times New Roman'; 
+  text-align: justify;
+  margin-bottom: 1.4em; 
+}
+
+.conteudo p {
+  text-indent: 2.8em;
+  margin-bottom: 0;
+}
+
+.artigo blockquote {
+  margin-left: 25em;
+  margin-top: 1.4em;
+  font-size: 0.8em;
+}
+
+ .grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, 200px);
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contato a {
+  color: var(--primary-color);
+  font-size: 6em;
+  transition: text-shadow 1s;
+}
+
+.artigo a:active,
+.artigo a:hover,
+.contato a:active,
+.contato a:hover  {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px  var(--title-color);
+}
