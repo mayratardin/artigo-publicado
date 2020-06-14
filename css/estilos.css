@@ -79,6 +79,7 @@ header {
 
 .site-subtitle, 
 .site-title {
+  margin-top: 140px;
   text-align: center;
   text-shadow: 0px 0px 10px whitesmoke;
 }
@@ -119,8 +120,9 @@ header {
 }
 
 header h4 {
-  margin-top: 3.4em;
-  margin-left: 56em;
+  margin-top: 2.4em;
+  margin-bottom: 10%;
+  text-align: right;
   text-shadow: 6px 0px 10px whitesmoke;
 }
 
@@ -146,7 +148,7 @@ header h4 {
 }
 
 .artigo blockquote {
-  margin-left: 25em;
+  margin-left: 50%;
   margin-top: 1.4em;
   font-size: 0.8em;
 }
