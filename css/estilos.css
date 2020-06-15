@@ -18,7 +18,7 @@ body {
   font-family: 'Roboto', sans-serif; 
 }
 
-/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+/* se a tela tiver pelo menos 200px vai carregar estes estilos */
 @media (min-width: 200px) {
   body {
     font-size: 12px;
@@ -32,6 +32,9 @@ body {
 @media (min-width: 600px) {
   body {
     font-size: 18px;
+  }
+  .artigo {
+    margin-top: 10%;
   }
 }
 
@@ -125,6 +128,7 @@ header {
 header h4 {
   margin-top: 2.4em;
   margin-bottom: 10%;
+  margin-right: 1em;
   text-align: right;
   text-shadow: 6px 0px 10px whitesmoke;
 }
